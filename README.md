@@ -1,1 +1,4 @@
 # StoreApp
+
+
+## Project notes: 
