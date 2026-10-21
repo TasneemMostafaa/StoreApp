@@ -15,7 +15,7 @@ class Api{
     }
     else{
       throw Exception(
-        'There is a probblem with the status code ${response.statusCode}',
+        'There is a problem with the status code ${response.statusCode}',
       );
     }
   }
@@ -30,7 +30,7 @@ class Api{
           body: body,
           headers: headers
           );
-          if(response.statusCode == 200){
+          if(response.statusCode == 200 || response.statusCode == 201){
             Map<String, dynamic> data= jsonDecode(response.body);
             return data;
           }
