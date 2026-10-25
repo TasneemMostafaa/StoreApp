@@ -11,6 +11,7 @@ class StoreApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       routes: {HomePage.id : (context) => HomePage(),
       UpdateProductPage.id: (context) => UpdateProductPage(),
       },
